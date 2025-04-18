@@ -25,7 +25,7 @@ cmd = "pavucontrol"
 
 [[block]]
 block = "net"
-format = " $icon  $ssid  "
+format = " $icon  $ssid "
 
 [[block]]
 block = "backlight"

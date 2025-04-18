@@ -1,6 +1,11 @@
 #!/bin/bash
 
 SCRIPTS_DIR=$HOME/.config/river/scripts/
-for scripts in "$SCRIPTS_DIR"*; do
-	bash $scripts &
-done
+
+init() {
+  for scripts in "$SCRIPTS_DIR"*; do
+    bash $scripts &
+  done
+}
+
+init
