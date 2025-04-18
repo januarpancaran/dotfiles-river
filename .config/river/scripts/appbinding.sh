@@ -1,15 +1,15 @@
 #!/bin/bash
 
 map() {
-  key="$1"
-  shift
-  riverctl map normal Super "$key" spawn "$@"
+	key="$1"
+	shift
+	riverctl map normal Super "$key" spawn "$@"
 }
 
 map_shift() {
-  key="$1"
-  shift
-  riverctl map normal Super+Shift "$key" spawn "$@"
+	key="$1"
+	shift
+	riverctl map normal Super+Shift "$key" spawn "$@"
 }
 
 map T ghostty

@@ -1,12 +1,5 @@
 #!/bin/bash
 
-# This is the example configuration file for river.
-#
-# If you wish to edit this, you will probably want to copy it to
-# $XDG_CONFIG_HOME/river/init or $HOME/.config/river/init first.
-#
-# See the river(1), riverctl(1), and rivertile(1) man pages for complete
-# documentation.
 SCRIPTS_DIR=$HOME/.config/river/scripts/
 for scripts in "$SCRIPTS_DIR"*; do
 	bash $scripts &
