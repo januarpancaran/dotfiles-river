@@ -20,3 +20,4 @@ map I "firefox --private-window"
 map D "discord --ozone-platform=wayland"
 map SemiColon spotify-launcher
 map O obs
+map M wlogout
