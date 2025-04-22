@@ -1,8 +1,7 @@
 #!/bin/bash
 
-way-displays >/tmp/way-displays.${XDG_VTNR}.${USER}.log 2>&1 &
-
 PROGRAMS=(
+  kanshi
   i3bar-river
   swww-daemon
   /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
