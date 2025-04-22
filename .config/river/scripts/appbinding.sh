@@ -1,26 +1,27 @@
 #!/bin/bash
 
 map() {
-	key="$1"
-	shift
-	riverctl map normal Super "$key" spawn "$@"
+  key="$1"
+  shift
+  riverctl map normal Super "$key" spawn "$@"
 }
 
 map_shift() {
-	key="$1"
-	shift
-	riverctl map normal Super+Shift "$key" spawn "$@"
+  key="$1"
+  shift
+  riverctl map normal Super+Shift "$key" spawn "$@"
 }
 
 map T ghostty
 map R "rofi -show drun"
 map E nautilus
-map B firefox
-map I "firefox --private-window"
+map B google-chrome-stable
+map I "google-chrome-stable --incognito"
 map D "discord --ozone-platform=wayland"
 map SemiColon spotify-launcher
 map O obs
 map M wlogout
+map C "XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
 
 map_shift N "_JAVA_AWT_WM_NONREPARENTING=1 netbeans"
 
