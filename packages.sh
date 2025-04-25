@@ -119,6 +119,7 @@ UTILS=(
 FONTS=(
 	noto-fonts-cjk
 	noto-fonts-emoji
+	otf-font-awesome
 	ttf-jetbrains-mono-nerd
 	ttf-space-mono-nerd
 	ttf-ms-win11-auto
