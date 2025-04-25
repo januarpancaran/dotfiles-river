@@ -87,6 +87,7 @@ UTILS=(
 	apparmor
 
 	# Others
+	acpi
 	bat
 	fastfetch
 	fzf
