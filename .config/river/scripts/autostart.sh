@@ -1,8 +1,9 @@
 #!/bin/bash
 
 PROGRAMS=(
+  dunst
   kanshi
-  i3bar-river
+  waybar
   swww-daemon
   /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 )

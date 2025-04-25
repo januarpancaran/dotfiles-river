@@ -17,8 +17,7 @@ APPS=(
 	papirus-icon-theme
 
 	# Bar
-	i3bar-river-git
-	i3status-rust
+	waybar
 
 	# Lockscreen
 	swayidle
@@ -61,7 +60,7 @@ UTILS=(
 	seatd
 
 	# Notification
-	mako
+	dunst
 
 	# Disk
 	gvfs
