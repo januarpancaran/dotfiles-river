@@ -1,7 +1,7 @@
 #!/bin/bash
 
 command_exists() {
-  command -v "$1" 2 >/dev/null &>1
+  command -v "$1" &>/dev/null
 }
 
 # Checking SUDO
@@ -23,7 +23,24 @@ if command_exists yay; then
   AUR_HELPER="yay"
 elif command_exists paru; then
   AUR_HELPER="paru"
+else
+  echo "No AUR Helper Detected!"
+  read -p "Install Yay? [y/N]" aur
+  if [[ "$aur" =~ ^[Yy]$ ]]; then
+    git clone https://aur.archlinux.org/yay.git
+    cd yay
+    makepkg -si --noconfirm
+    cd ..
+    rm -rf yay
+
+    AUR_HELPER="yay"
+  else
+    echo "Please Install yay or paru!"
+    exit 1
+  fi
 fi
+
+echo "$AUR_HELPER installed! Proceeding Installation..."
 
 source packages.sh
 
