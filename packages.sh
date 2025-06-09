@@ -37,6 +37,7 @@ APPS=(
 	pavucontrol
 	spotify-launcher
 	telegram-desktop
+	visual-studio-code-bin
 	zsh
 )
 
