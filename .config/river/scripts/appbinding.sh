@@ -21,8 +21,9 @@ map D "discord --ozone-platform=wayland"
 map SemiColon spotify-launcher
 map O obs
 map M wlogout
-map C "XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
+map C code
 
+map_shift C "XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
 map_shift N "_JAVA_AWT_WM_NONREPARENTING=1 netbeans"
 
 # Screenshot
